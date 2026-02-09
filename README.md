@@ -3,7 +3,10 @@
 A web application for managing your personal movie collection with CRUD operations, filtering, and form validation. Demonstrates working with REST API, asynchronous requests, and DOM manipulation.
 
 ## 🚀 Live Demo  
-**[View the live website here](https://kseniiasad.github.io/Movie-library-app/)**  
+**[View the live website here](https://kseniiasad.github.io/Movie-library-app/)**
+
+## 📸 Preview
+![Website Preview](preview.png)
 
 ## ✨ Features
 
