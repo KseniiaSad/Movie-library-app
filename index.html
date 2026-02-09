@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список фильмов</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="film-form">
+        <label for="title">Название:</label><br />
+        <input type="text" id="title" name="title" /><br />
+        <div class="error" id="title-error">Поле не должно быть пустым</div>
+        <label for="genre">Жанр:</label><br />
+        <input type="text" id="genre" name="genre" /><br />
+        <div class="error" id="genre-error">Поле не должно быть пустым</div>
+        <label for="releaseYear">Год:</label><br />
+        <input type="text" id="releaseYear" name="releaseYear" /><br />
+        <div class="error" id="releaseYear-error">Некорректный год</div>
+        <input type="checkbox" id="isWatched" name="isWatched" />
+        <label for="isWatched">Успели посмотреть?</label><br />
+        <button class="film-form__button" type="submit">Добавить</button>
+    </form>
+    <div class="filter-wrapper">
+        <form class="filters">
+            <input type="text" id="filter-title" placeholder="Название фильма">
+            <input type="text" id="filter-genre" placeholder="Жанр">
+            <input type="text" id="filter-year" placeholder="Год">
+            <select id="filter-is-watched">
+                <option value="">Все</option>
+                <option value="true">Просмотрен</option>
+                <option value="false">Не просмотрен</option>
+            </select>
+        </form>
+        <button class="delete-all" id="delete-all">Удалить всё</button>
+    </div>
+    <table id="film-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="film-tbody">
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
